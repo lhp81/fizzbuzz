@@ -1,9 +1,9 @@
 def fizzbuzz(num):
     if num % 15 == 0:
-            return "FizzBuzz"
-    elif num % 3 == 0:
+        return 'FizzBuzz'
+    if num % 3 == 0:
         return "Fizz"
-    elif num % 5 == 0:
+    if num % 5 == 0:
         return "Buzz"
     else:
         return str(num)
@@ -17,13 +17,20 @@ def fizzbuzz_extendible(num, user_dict):
     the dict's keys are suarched for num. if num is found, and num % key == 0,
     appropriate output will be displayed; if it isn't found, num will
     be given the regular fizzbull evaluation."""
+    opnomatopeia = ''
+    if num % 3 == 0:
+        opnomatopeia += 'Fizz'
+    if num % 5 == 0:
+        opnomatopeia += 'Buzz'
     for key in user_dict:
         if num % key == 0:
-            return user_dict[key] + 'FizzBuzz'
+            opnomatopeia += user_dict[key]
+    if len(opnomatopeia) == 0:
+        return str(num)
     else:
-        return fizzbuzz(num)
+        return opnomatopeia
 
-extra_sounds = {2:'ping', 87:'doink', 77:'plink'}
-fizzbuzz_extendible(8, extra_sounds)
-fizzbuzz_extendible(15, extra_sounds)
-fizzbuzz_extendible(87, extra_sounds)
+extra_sounds = {2:'ping', 9:'pfffft', 11:'tzzzzzzap', 87:'doink', 77:'plink'}
+print fizzbuzz_extendible(8, extra_sounds)
+print fizzbuzz_extendible(15, extra_sounds)
+print fizzbuzz_extendible(87, extra_sounds)
