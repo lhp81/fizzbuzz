@@ -10,7 +10,7 @@ def fizzbuzz(num):
 
 def fizzbuzz_extendible(num, user_dict):
     """ this function will accept a number and a dictionary.
-    the dict's keys are suarched for num. if num is found, the
+    the dict's keys are suarched for num. if num is found, and num % key == 0,
     appropriate output will be displayed; if it isn't found, num will
     be given the regular fizzbull evaluation."""
     for key in user_dict:
