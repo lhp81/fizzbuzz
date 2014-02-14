@@ -20,8 +20,8 @@ def fizzbuzz_extendible(num, user_dict):
     for key in user_dict:
         if num % key == 0:
             return user_dict[key] + 'FizzBuzz'
-        else:
-            return fizzbuzz(num)
+    else:
+        return fizzbuzz(num)
 
 extra_sounds = {2:'ping', 87:'doink', 77:'plink'}
 fizzbuzz_extendible(8, extra_sounds)
