@@ -8,6 +8,10 @@ def fizzbuzz(num):
     else:
         return str(num)
 
+print fizzbuzz(48)
+print fizzbuzz(-99)
+print fizzbuzz(15**3)
+
 def fizzbuzz_extendible(num, user_dict):
     """ this function will accept a number and a dictionary.
     the dict's keys are suarched for num. if num is found, and num % key == 0,
@@ -15,11 +19,11 @@ def fizzbuzz_extendible(num, user_dict):
     be given the regular fizzbull evaluation."""
     for key in user_dict:
         if num % key == 0:
-            return user_dict[num] + 'FizzBuzz'
-    else:
-        return fizzbuzz(num)
+            return user_dict[key] + 'FizzBuzz'
+        else:
+            return fizzbuzz(num)
 
-extra_sounds = {1:'ploop', 2:'ping', 87:'doink', 77:'plink'}
-myfizzbuzz.fizzbuzz_extendible(8, extra_sounds)
-myfizzbuzz.fizzbuzz_extendible(15, extra_sounds)
-myfizzbuzz.fizzbuzz_extendible(87, extra_sounds)
+extra_sounds = {2:'ping', 87:'doink', 77:'plink'}
+fizzbuzz_extendible(8, extra_sounds)
+fizzbuzz_extendible(15, extra_sounds)
+fizzbuzz_extendible(87, extra_sounds)
