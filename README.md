@@ -1,6 +1,8 @@
 fizzbuzz
 ========
 
+[![Travis](https://api.travis-ci.org/<you>/<yourproject>)](https://api.travis-ci.org/<you>/<yourproject>)
+
 My solution for fizzbuzz
 
 This file contains two functions:
