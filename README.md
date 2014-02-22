@@ -1,8 +1,7 @@
 fizzbuzz
 ========
 
-[![Travis](https://api.travis-ci.org/<you>/<yourproject>)](https://api.travis-ci.org/<you>/<yourproject>)
-
+[![Build Status](https://travis-ci.org/lhp81/fizzbuzz.png?branch=master)](https://travis-ci.org/lhp81/fizzbuzz)
 My solution for fizzbuzz
 
 This file contains two functions:
