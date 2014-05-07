@@ -1,10 +1,11 @@
 def fizzbuzz(num):
-    if num % 15 == 0:
-        return 'FizzBuzz'
+    onomatopeia = ''
     if num % 3 == 0:
-        return "Fizz"
+        onomatopeia += 'Fizz'
     if num % 5 == 0:
-        return "Buzz"
+        onomatopeia += 'Buzz'
+    if onomatopeia is not '':
+        return onomatopeia
     else:
         return str(num)
 
